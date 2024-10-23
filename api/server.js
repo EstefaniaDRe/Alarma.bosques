@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
 
     const mailOptions = {
       from: "alarma@bosques.edu.mx",
-      to: "estefaniadrpe@gmail.com", "hs_practicantetec@bosques.edu.mx",
+      to: "estefaniadrpe@gmail.com",
       subject: `Alerta de Siniestro: ${type}`,
       text: message,
       html: `<h3>${message}</h3>`,
@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
       secure: true,
       auth: {
         user: "alarma@bosques.edu.mx",
-        pass: "yqma thba pkny enbe ",  // Considera mover esto a variables de entorno por seguridad
+        pass: "yqma thba pkny enbe",  // Considera mover esto a variables de entorno por seguridad
       },
     });
 
